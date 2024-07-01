@@ -1,4 +1,4 @@
-package com.dev.vihaan.netty.starter.with.spring_boot.server.handler;
+package com.dev.vihaan.netty.starter.with.spring_boot.discard;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;

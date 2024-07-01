@@ -1,6 +1,5 @@
-package com.dev.vihaan.netty.starter.with.spring_boot.server;
+package com.dev.vihaan.netty.starter.with.spring_boot.echo.server;
 
-import com.dev.vihaan.netty.starter.with.spring_boot.server.handler.DiscardServerHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -14,17 +13,18 @@ import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-public class DiscardServer {
+public class EchoServer {
 
     private final EventLoopGroup bossGroup;
     private final EventLoopGroup workerGroup;
 
-    public DiscardServer() {
+    public EchoServer() {
         this.bossGroup = new NioEventLoopGroup(1);
         this.workerGroup = new NioEventLoopGroup();
     }
 
-    public void start() {
+    public void start(int port) {
+        log.info("echo-server start()");
         try {
             ServerBootstrap bootstrap = new ServerBootstrap();
             bootstrap.group(bossGroup, workerGroup)
@@ -34,12 +34,12 @@ public class DiscardServer {
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ChannelPipeline pipeline = ch.pipeline();
                             // handler 추가
-                            pipeline.addLast(new DiscardServerHandler());
+                            pipeline.addLast(new EchoServerHandler());
                         }
                     });
             
             // bind() 접속할 포트를 지정 8888
-            ChannelFuture future = bootstrap.bind(8888).syncUninterruptibly();
+            ChannelFuture future = bootstrap.bind(port).syncUninterruptibly();
             // sync() throw new InterruptedException vs syncUninterruptibly() is Thread.currentThread().interrupt();
             future.channel().closeFuture().syncUninterruptibly();
         } catch (Exception e) {

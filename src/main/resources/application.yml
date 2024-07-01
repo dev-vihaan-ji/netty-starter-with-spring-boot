@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: netty-starter-with-spring-boot
+
+netty:
+  server:
+    # DISCARD
+    # ECHO
+    type: ECHO
+    port: 8888
+
+logging:
+  level:
+    root: info
