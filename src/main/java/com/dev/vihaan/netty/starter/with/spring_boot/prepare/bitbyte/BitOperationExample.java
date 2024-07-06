@@ -1,4 +1,4 @@
-package com.dev.vihaan.netty.starter.with.spring_boot.prepare;
+package com.dev.vihaan.netty.starter.with.spring_boot.prepare.bitbyte;
 
 public class BitOperationExample {
     public static void main(String[] args) {

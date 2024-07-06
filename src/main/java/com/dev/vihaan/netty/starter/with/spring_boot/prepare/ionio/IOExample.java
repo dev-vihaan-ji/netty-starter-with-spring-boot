@@ -1,7 +1,6 @@
-package com.dev.vihaan.netty.starter.with.spring_boot.prepare;
+package com.dev.vihaan.netty.starter.with.spring_boot.prepare.ionio;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 
 public class IOExample {
 
