@@ -32,6 +32,12 @@ Developers who are typically familiar with web development or mobile development
 
 ---
 
+## Developer Information
+- instagram: https://www.instagram.com/dev_vihaan_ji/
+- e-mail: dev.vihaan.ji@gmail.com 
+
+---
+
 ## Project Timeline
 
 ---
