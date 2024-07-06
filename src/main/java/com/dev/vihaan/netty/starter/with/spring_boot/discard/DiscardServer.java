@@ -1,6 +1,5 @@
-package com.dev.vihaan.netty.starter.with.spring_boot.server;
+package com.dev.vihaan.netty.starter.with.spring_boot.discard;
 
-import com.dev.vihaan.netty.starter.with.spring_boot.server.handler.DiscardServerHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -28,7 +27,8 @@ public class DiscardServer {
         this.workerGroup = new NioEventLoopGroup();
     }
 
-    public void start() {
+    public void start(int port) {
+        log.info("discard-server start()");
         try {
             // ServerBootstrap은 Netty의 서버 구현을 위한 핵심 클래스입니다.
             ServerBootstrap bootstrap = new ServerBootstrap();
@@ -46,10 +46,9 @@ public class DiscardServer {
                             pipeline.addLast(new DiscardServerHandler());
                         }
                     });
-
-            // 8888 포트에서 서버를 시작합니다.
-            ChannelFuture future = bootstrap.bind(8888).syncUninterruptibly();
-            // 서버가 종료될 때까지 기다립니다.
+            // bind() 접속할 포트를 지정 8888
+            ChannelFuture future = bootstrap.bind(port).syncUninterruptibly();
+            // sync() throw new InterruptedException vs syncUninterruptibly() is Thread.currentThread().interrupt();
             future.channel().closeFuture().syncUninterruptibly();
         } catch (Exception e) {
             log.error("start() error", e);
