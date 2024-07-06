@@ -36,7 +36,7 @@ Developers who are typically familiar with web development or mobile development
 
 ---
 
-# _Pre-learning_
+# _Pre-learning Day 0 branch_
 - Learn the following concepts with simple examples before studying the Netty framework
 1. **BIT, BYTE**
 2. **PROTOCOL (TCP/IP, HTTP)**
@@ -54,7 +54,7 @@ Developers who are typically familiar with web development or mobile development
 4. **Implement and test a Discard Server**
 
 ---
-# _Day-2 brach_
+# _Day-2 branch_
 1. **Explain the core keywords of the Netty architecture**
 2. **NioEventLoopGroup, BootStrap, Pipeline, Event Handler**
 3. **Implement and test an Echo Server and Echo Client**
