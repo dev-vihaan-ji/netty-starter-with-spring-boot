@@ -13,7 +13,7 @@ public class SyncAsyncExample {
         // 레스토랑에서 음식을 주문하고 대기합니다.
         // 음식이 나올 때까지 일을 하지 못 합니다.
         // 동기 방식의 주문 처리
-         Restaurant.processSyncOrder(order);
+        Restaurant.processSyncOrder(order);
 
         // 레스토랑에서 음식을 주문하고 다른 일을 할 수 있습니다.
         Restaurant.processAsyncOrder(order);

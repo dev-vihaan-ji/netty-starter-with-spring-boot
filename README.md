@@ -1,7 +1,7 @@
 # Project for Netty beginners
 
 ---
-## Overview
+## **Overview**
 
 📖 Netty is a Java-based asynchronous network application framework.
 Developers who are typically familiar with web development or mobile development often don't know much about Netty.
@@ -20,7 +20,7 @@ Developers who are typically familiar with web development or mobile development
 
 ---
 
-## Project Environment (Pre-requisites required)
+## **Project Environment (Pre-requisites required)**
 1. IDEA Intellij (Ultimate version is paid, but available for free for university students)
 
 
@@ -32,13 +32,13 @@ Developers who are typically familiar with web development or mobile development
 
 ---
 
-## Developer Information
+## **Developer Information**
 - instagram: https://www.instagram.com/dev_vihaan_ji/
 - e-mail: dev.vihaan.ji@gmail.com 
 
 ---
 
-## Project Timeline
+## **Project Timeline**
 
 ---
 
