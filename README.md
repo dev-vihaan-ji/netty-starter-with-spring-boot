@@ -37,6 +37,7 @@ Developers who are typically familiar with web development or mobile development
 ---
 
 # _Pre-learning Day 0 branch_
+- The examples can be written in plain Java, without any additional frameworks or libraries.
 - Learn the following concepts with simple examples before studying the Netty framework
 1. **BIT, BYTE**
 2. **PROTOCOL (TCP/IP, HTTP)**
