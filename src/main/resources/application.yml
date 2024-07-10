@@ -5,7 +5,8 @@ spring:
 netty:
   server:
     # DISCARD
-    type: DISCARD
+    # ECHO
+    type: ECHO
     port: 8888
 
 logging:
